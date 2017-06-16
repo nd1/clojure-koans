@@ -1,4 +1,5 @@
-(ns clojure-koans.02-scalars)
+(ns clojure-koans.02-scalars
+      (:require [clojure.set :as set]))
 
 "You can use vectors in clojure as array-like structures"
 (= __ (count [42]))
