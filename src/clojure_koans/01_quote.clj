@@ -1,6 +1,6 @@
 (ns clojure-koans.01-quote)
 
-  "Wrap a quote around a list to suppress evaluation"
+"Wrap a quote around a list to suppress evaluation"
   (= (quote (1 2 3 4 5)) __)
 
   "There is a shortcut too!"
@@ -14,3 +14,16 @@
 
   "And a bonus brownie points for guessing this one.."
   (= __ (inc 4))
+
+
+"Answers"
+
+(= (quote (1 2 3 4 5)) '(1 2 3 4 5))
+
+(= (quote (1 2 3 4 5)) '(1 2 3 4 5))
+
+(= 'age (let [age 9] (quote age)))
+
+(= (list 1 '(+ 2 3)) '(1 (+ 2 3)))
+
+(= 5 (inc 4))
